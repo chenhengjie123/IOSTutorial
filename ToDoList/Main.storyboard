@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keK-da-FTl">
-                                <rect key="frame" x="20" y="135" width="280" height="30"/>
+                                <rect key="frame" x="20" y="115" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,9 +70,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="keK-da-FTl" firstAttribute="leading" secondItem="FVa-XF-oHv" secondAttribute="leading" constant="20" id="77J-3V-2JB"/>
-                            <constraint firstItem="keK-da-FTl" firstAttribute="top" secondItem="i7y-wk-iPx" secondAttribute="bottom" constant="71" id="OAp-ns-6sx"/>
-                            <constraint firstAttribute="trailing" secondItem="keK-da-FTl" secondAttribute="trailing" constant="20" id="X63-nc-2GP"/>
+                            <constraint firstItem="keK-da-FTl" firstAttribute="leading" secondItem="FVa-XF-oHv" secondAttribute="leading" constant="20" symbolic="YES" id="EPi-nU-Uh6"/>
+                            <constraint firstItem="keK-da-FTl" firstAttribute="top" secondItem="i7y-wk-iPx" secondAttribute="bottom" constant="51" id="MWR-xZ-zpH"/>
+                            <constraint firstAttribute="trailing" secondItem="keK-da-FTl" secondAttribute="trailing" constant="20" symbolic="YES" id="loe-O1-9YB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add To-Do Item" id="BMP-m1-p5U">

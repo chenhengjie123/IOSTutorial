@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ToDoListMonkey.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>67018F7B18704D6800D1C645</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67EBC029189D2742006C7C7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
