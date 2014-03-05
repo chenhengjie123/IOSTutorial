@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67EBC029189D2742006C7C7C"
-               BuildableName = "ToDoList copy.app"
+               BuildableName = "ToDoList_MonkeyTalk.app"
                BlueprintName = "ToDoListMonkey"
                ReferencedContainer = "container:ToDoList.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67EBC029189D2742006C7C7C"
-            BuildableName = "ToDoList copy.app"
+            BuildableName = "ToDoList_MonkeyTalk.app"
             BlueprintName = "ToDoListMonkey"
             ReferencedContainer = "container:ToDoList.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67EBC029189D2742006C7C7C"
-            BuildableName = "ToDoList copy.app"
+            BuildableName = "ToDoList_MonkeyTalk.app"
             BlueprintName = "ToDoListMonkey"
             ReferencedContainer = "container:ToDoList.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67EBC029189D2742006C7C7C"
-            BuildableName = "ToDoList copy.app"
+            BuildableName = "ToDoList_MonkeyTalk.app"
             BlueprintName = "ToDoListMonkey"
             ReferencedContainer = "container:ToDoList.xcodeproj">
          </BuildableReference>
