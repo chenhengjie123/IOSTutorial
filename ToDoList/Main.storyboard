@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yRp-ME-5Bi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yRp-ME-5Bi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--To Do List View Controller -  My To-Do List-->
+        <!-- My To-Do List-->
         <scene sceneID="CW3-1y-aSv">
             <objects>
                 <tableViewController id="Zai-jT-aPW" customClass="XYZToDoListViewController" sceneMemberID="viewController">
@@ -49,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="376" y="130"/>
         </scene>
-        <!--Add To Do Item View Controller - Add To-Do Item-->
+        <!--Add To-Do Item-->
         <scene sceneID="nwN-Ur-U1o">
             <objects>
                 <viewController id="ASO-4e-ouL" customClass="XYZAddToDoItemViewController" sceneMemberID="viewController">
@@ -63,7 +64,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keK-da-FTl">
                                 <rect key="frame" x="20" y="115" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -75,6 +75,7 @@
                             <constraint firstAttribute="trailing" secondItem="keK-da-FTl" secondAttribute="trailing" constant="20" symbolic="YES" id="loe-O1-9YB"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NEj-ad-fzH"/>
                     <navigationItem key="navigationItem" title="Add To-Do Item" id="BMP-m1-p5U">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="3XD-ep-Fxj">
                             <connections>
@@ -87,6 +88,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="doneButton" destination="F8P-fA-U6R" id="CA9-hd-ujl"/>
                         <outlet property="textField" destination="keK-da-FTl" id="oSj-aR-qtw"/>

@@ -31,6 +31,13 @@
     XYZToDoItem *item3 = [[XYZToDoItem alloc] init];
     item3.itemName = @"Read a book";
     [self.toDoItems addObject:item3];
+    
+//    for (int i=0; i < 10; i++) {
+//        XYZToDoItem *item = [[XYZToDoItem alloc] init];
+//        item.itemName = [NSString stringWithFormat:@"%d",i];
+//        [self.toDoItems addObject:item];
+//    }
+    
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
@@ -57,6 +64,9 @@
     [super viewDidLoad];
     self.toDoItems = [[NSMutableArray alloc] init];
     [self loadInitialData];
+    
+    // add timer for refresh view
+    _timer=[NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(refreshTableView:) userInfo:nil repeats:YES];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -92,7 +102,26 @@
     
     // Configure the cell...
     XYZToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = toDoItem.itemName;
+    
+    if (cell == nil){
+        // init cell
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    if ([cell.subviews count] == 3){
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
+        label.text = toDoItem.itemName;
+        [cell addSubview:label];
+    }
+    
+    cell.textLabel.text = @"";
+    
+    
+    for (UILabel *subview in cell.subviews){
+        if ([subview isMemberOfClass:([UILabel class])]) {
+            subview.text = toDoItem.itemName;
+        }
+    }
     
     if (toDoItem.completed){
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -158,10 +187,55 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     XYZToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
     tappedItem.completed = !tappedItem.completed;
+    
+    
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+// get all UITableViewCell
+-(NSArray *)cellsForTableView
+{
+    UITableView *tableView = self.tableView;
+    NSInteger sections = tableView.numberOfSections;
+    NSMutableArray *cells = [[NSMutableArray alloc]  init];
+    for (int section = 0; section < sections; section++) {
+        NSInteger rows =  [tableView numberOfRowsInSection:section];
+        for (int row = 0; row < rows; row++) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];//**here, for those cells not in current screen, cell is nil**
+            [cells addObject:cell];
+        }
+    }
+    return cells;
+}
+
+
+/*add function for reload all subviews in tableView*/
+
+- (void)refreshTableView:(UITableView*)tableView
+{
+
+    for (UIView *subCell in [self cellsForTableView]) {
+        if ([subCell isMemberOfClass:([UITableViewCell class])]) {
+            NSLog(@"Refresh subCell");
+            for (UILabel *label in subCell.subviews){
+                if ([label isMemberOfClass:([UILabel class])]) {
+                    NSLog([NSString stringWithFormat:@"Old address of label with content %@: %p", label.text, &*label]);
+                    [label removeFromSuperview];
+                    UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 20)];
+                    NSString *text = label.text;
+                    newLabel.text = text;
+                    NSLog([NSString stringWithFormat:@"New address of label with content %@: %p", newLabel.text, &*newLabel]);
+                    [subCell addSubview:newLabel];
+                }
+                
+            }
+        }
+    }
 }
 
 @end

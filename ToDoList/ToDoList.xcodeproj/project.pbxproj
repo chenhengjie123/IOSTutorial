@@ -173,6 +173,7 @@
 		67EBC047189D28EC006C7C7C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		67EBC049189D28F7006C7C7C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		67EBC04B189D28FE006C7C7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		929BC8671B8FEF9800F118AD /* ToDoList copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ToDoList copy2-Info.plist"; path = "/Users/hengjiechen/Develop/iOS/develop/IOSTutorial/ToDoList/ToDoList copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +242,7 @@
 				67018F5E18704D6800D1C645 /* Frameworks */,
 				67018F5D18704D6800D1C645 /* Products */,
 				67EBC03E189D2742006C7C7C /* ToDoList copy-Info.plist */,
+				929BC8671B8FEF9800F118AD /* ToDoList copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -705,7 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (K3U47N9865)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (RGR96FVT75)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
@@ -721,7 +723,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (K3U47N9865)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (RGR96FVT75)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[XYZToDoListViewController refreshTableView:]:XYZToDoListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "subCell.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[XYZToDoListViewController tableView:cellForRowAtIndexPath:]:XYZToDoListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sizeof(cell.subviews)">
+            </PersistentString>
+            <PersistentString
+               value = "cell.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__30+[RemoteCapture processEvents]_block_invoke:RemoteCapture.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "!event">
+            </PersistentString>
+            <PersistentString
+               value = "event">
+            </PersistentString>
+            <PersistentString
+               value = "(UIEvent *)event">
+            </PersistentString>
+            <PersistentString
+               value = "rpevent.phase">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -13,4 +13,6 @@
 
 @property XYZToDoItem *toDoItem;
 
+@property NSTimer *timer;
+
 @end
