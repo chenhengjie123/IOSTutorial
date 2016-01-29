@@ -1151,5 +1151,6 @@
 
 	[self waitForAnimationsToFinish];
 }
+
 @end
 

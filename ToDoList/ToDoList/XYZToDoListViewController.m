@@ -55,6 +55,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView setAccessibilityLabel:@"ToDoTableView"];
+    [self.tableView setIsAccessibilityElement:YES];
     self.toDoItems = [[NSMutableArray alloc] init];
     [self loadInitialData];
 
